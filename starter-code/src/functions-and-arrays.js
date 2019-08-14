@@ -28,7 +28,7 @@ function findLongestWord(arrayWords) {
 
 var numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 function sumArray(num) {
-  if (num.length === 0) return 0;
+  if (num.length === 0) return 0; // or if(!num.length)
   return num.reduce((Sum = (n1, n2) => n1 + n2));
 }
 
@@ -103,6 +103,7 @@ var wordsFind = [
 
 function doesWordExist(wrdFind, srchWrd) {
   for (let i = 0; i < wrdFind.length; i++) {
+    // we can use if(wrdFind.indexOf(srchWrd)!==-1) return true
     if (srchWrd === wrdFind[i]) {
       return true;
     }
